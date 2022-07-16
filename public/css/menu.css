@@ -1,0 +1,14 @@
+.menu{
+    font-size: 15px;
+    text-decoration: normal;
+}
+.active{
+    text-decoration: underline !important;
+    color: rgb(66, 7, 122);
+}
+
+.menu a:hover{
+    border: 2px solid blueviolet;
+    color: rgb(66, 7, 122);
+    font-size: 17px;
+}

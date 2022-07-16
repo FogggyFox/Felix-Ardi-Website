@@ -1,0 +1,51 @@
+body {
+    font-size: 18px;
+    line-height: normal;
+    color: black;
+    font-family: 'Times New Roman', Georgia, Times, sans-serif;
+    font-weight: normal;
+}
+
+body h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(114, 2, 86);
+    color: white;
+    padding: 10px;
+}
+
+.form_div {
+    text-align: center;
+}
+
+#form {
+    border: 1px solid rgb(221, 3, 167);
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.part_of_form {
+    margin: 10px;
+    padding: 5px;
+}
+
+span{
+    margin: 10px;
+}
+
+textarea {
+    padding: 0;
+    border: 0;
+    width: 100%;
+    resize: none;
+    height: 10vh;
+    white-space: normal;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    vertical-align: middle;
+}

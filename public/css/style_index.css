@@ -1,0 +1,181 @@
+h2{
+    font-family: "Courier New" monospace;
+    font-style: oblique;
+    font-size: 50px;
+    margin: 5px;
+    color: #2f0542;
+    text-align: center;
+}
+
+
+
+header{
+    margin: 5px;
+    color: #6d039e;
+    background: #cf82f38f;
+    -webkit-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+    -moz-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+    box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+}
+
+body {
+    background-color: #ac0af723;
+    margin: 10px;
+    border: 1px solid rgba(73, 22, 71, 0.603);
+}
+
+.code {
+    border: 2px solid rgba(39, 18, 39, 0.2);
+    margin-left: 0px;
+}
+
+.formul{
+    font-size: 30px;
+    font-family: "Blippo" fantasy;
+    font-weight: 800;
+}
+
+@media screen and (min-width:1100px){
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .title h1{
+        font-family: "Courier New" monospace;
+        font-style: oblique;
+        font-size: 120px;
+        margin: 5px;
+        text-align: right;
+    }
+    .title form{
+        text-align: right;
+        flex-direction: row;
+    }
+    .title img {
+        width: 25vw;
+    
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photos img {
+        width: 400px;
+
+    }
+    .about {
+        filter: drop-shadow(-1px,-1px, 3px, rgb(7, 0, 8));
+        -webkit-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        -moz-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    #smile{
+        color: #b9b606;
+        font-size: 15px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    .title h1{
+        font-family: "Courier New" monospace;
+        font-style: oblique;
+        font-size: 10vw;
+        margin: 5px;
+        text-align: right;
+    }
+    .title form{
+        text-align: right;
+        flex-direction: column;
+    }
+    
+    .title img {
+        width: 25vw;
+    
+    }
+    .photos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .photos img {
+        width: 200px;
+
+    }
+    .about {
+        filter: drop-shadow(-1px,-1px, 3px, rgb(7, 0, 8));
+        -webkit-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        -moz-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
+        font-size: 1.5vw;
+        position: relative;
+        
+    }
+    #smile{
+        color: #b9b606;
+        font-size: 15px;
+    }
+}
+
+.about i, ul{
+    color: #540579;
+}
+
+.about q{
+    text-decoration: underline;
+}
+
+
+pre {
+    white-space: pre-wrap;
+}
+
+.links{
+    font-size: 25px;
+}
+.links section{
+    text-align: center;
+    background-image: url(../img/10.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-color: rgb(233, 171, 241);
+}
+.links a{
+    font-size: 1.5vw;
+}
+.links span{
+    padding-bottom: 4vw;
+
+}
+.linksimg {
+    width: 2vw;
+}
+.linksinst{
+    width: 1.2vw;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.close{
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/socket.io.min.js"></script>
+    <script src="js/todo.js"></script>
+</head>
+
+<body>
+    <header>
+        {{>header}}
+    </header>
+    <main>
+        <h2 class="naming">
+            Список пожеланий 
+        </h2>
+        <div class="form_div">
+            <form id="form">
+                <p class="part_of_form">
+                    <label for="language">
+                        <span class="label_language">Выберите язык расписания: </span>
+                        <select name="language" id="language" onchange="change_language()">
+                            <option value="rus">Русский</option>
+                            <option value="eng">English</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="part_of_form">
+                    <label for="number">
+                        <span class="number">Количество пожеланий:</span>
+                        <input name="number" id="number" type="number" value="1" min="1">
+                    </label>
+                </p>
+            </form>
+
+            <button id="submit" name="submit" onclick="generate_table();">Принять</button>
+            <button id="save" name="save" onclick="save_params();">Сохранить</button>
+            <button id="clear" name="clear" onclick="clear_all()">Очистить</button>
+        </div>
+        <span>Тип идеи - идея для видео, для рассказа, просто комплимент и т.д.</span>
+        <div class="content">
+            <table class="table">
+                <tr class="header_table">
+                    <th class="typeidea">
+                        Тип идеи
+                    </th>
+                    <th class="idea">
+                        Содержание идеи
+                    </th>
+                    <th class="when">
+                        Желаемое время реализации
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        init()
+    </script>
+    {{>footer}}
+    {{>menu_script}}
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+
+<Head>
+  {{>head}}
+  <link href="css/table.css" rel="stylesheet">
+</Head>
+
+<Body>
+  <header>
+        {{>header}}
+    </header>
+  <main class="grid-container">
+    <table class="table">
+        <caption> <strong>Мои книги и рассказы</strong> </caption>
+        <thead>
+        <tr>
+            <th>Название рассказа</th>
+            <th>Дата написания</th>
+            <th>Жанр</th>
+            <th>Статус</th>
+            <th>Ссылка</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Обещание</td>
+            <td>12.03.2020</td>
+            <td>Драма, эпик, рассказ</td>
+            <td>Done</td>
+            <td><a>Тыкай</a></td>
+        </tr>
+        <tr>
+            <td>Она</td>
+            <td>19.08.2020</td>
+            <td>Драма, любовь, рассказ</td>
+            <td>Done</td>
+            <td><a>Тыкай</a></td>
+        </tr>
+        <tr>
+            <td>Парень в белом шарфе</td>
+            <td>26.06.2021</td>
+            <td>Комедия, любовь, рассказ</td>
+            <td>Done</td>
+            <td><a>Тыкай</a></td>
+        </tr>
+        <tr>
+            <td>Белорусский дровосек</td>
+            <td>21.12.2019</td>
+            <td>Комедия, приключения, рассказ</td>
+            <td>Done</td>
+            <td><a>Тыкай</a></td>
+        </tr>
+        </tbody>
+    </table>
+    
+  </main>
+  {{>footer}}
+  {{>menu_script}}
+</Body>
+
+
+</HTML>
